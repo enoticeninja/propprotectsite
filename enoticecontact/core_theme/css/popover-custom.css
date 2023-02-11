@@ -1,0 +1,70 @@
+.popover-custom-theme {
+    margin-top:50px!important;
+    overflow:visible;
+    border: 5px solid #ceccc9;
+}  
+.popover-custom-theme.popover.left>.arrow { 
+    margin-top:-60px!important;
+}
+.popover-custom-theme  .popover-title{
+    padding: 0px 0px 0px;
+    height:20px;
+}
+.popover-custom-theme  .popover-title .sub-title{
+    position:relative;
+    top: -40px;
+    left: 10px;
+}
+
+.popover-custom-theme  .popover-title .sub-title .fa{
+    width: 65px!important;
+    height: 65px!important;
+    line-height: 65px!important;
+    font-size: 50px!important;
+    margin-right: 10px;
+    border-radius: 4px;    
+}
+.popover-custom-theme  .popover-actions{
+    position:absolute;
+    top:10px;
+    right:20px;
+}
+
+.popover.has-error>.popover-content,.popover.has-error>.popover-body{
+    padding: 5px;
+    background-color: #f44336;
+    color:#ffffff;
+    line-height: 1.4;
+}
+.popover.has-error>.popover-title {
+    background: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: #f44336;
+    text-transform: uppercase;
+    padding: 0px 5px 0px;
+    border: 0;
+}
+
+.bs-popover-top.has-error .arrow::after{
+    border-top-color: #fb0404;
+}
+.bs-popover-bottom.has-error .arrow::after{
+    border-bottom-color: #fb0404;
+}
+.bs-popover-left.has-error .arrow::after{
+    border-left-color: #fb0404;
+}
+.bs-popover-right.has-error .arrow::after{
+    border-right-color: #fb0404;
+}
+
+
+.popover.has-error>.popover-title {
+    background: rgba(255, 255, 255, 0);
+}
+ .has-error.top>.arrow:after,.has-error .left>.arrow :after,.has-error .right>.arrow :after {
+    left: 1px;
+    border-bottom-width: 0;
+    border-top-color: #f44336;
+}

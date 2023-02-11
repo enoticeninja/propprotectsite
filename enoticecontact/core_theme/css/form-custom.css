@@ -1,0 +1,138 @@
+.control-label {
+    font-size: 16px;
+}
+.form-group{
+	/* padding-top:20px; */
+}
+@media (min-width: 768px) {
+	.form-common-element-wrapper{
+		 min-height:100px;
+	/*    max-height:100px; */
+	}
+}
+.form-common-element-wrapper >.form-group.form-md-line-input:last-child,.form-common-element-wrapper > .form-group.form-md-line-input:first-child  {
+    /* margin-bottom: 40px; */
+}
+
+.form-group.form-md-line-input:first-child {
+    /* margin-bottom: 40px; */
+}
+.form-common-element-wrapper >.md-checkbox {
+    /* margin-bottom: 40px; */
+    margin-top:30px;
+}
+.md-checkbox-group{
+    /* margin-bottom:40px; */
+}
+.md-checkbox-group .md-checkbox {
+    margin-bottom: 0px;
+}
+
+tr td .md-checkbox, th .md-checkbox , .check-group-container .md-checkbox{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.form-group.form-md-line-input .form-control {
+    color: #C49F47;
+    font-size: 16px;
+}
+
+.form-group.has-error label {
+    color: #e73d4a;
+}
+
+.form-group.form-md-line-input.form-md-floating-label .form-control.edited~label, .form-group.form-md-line-input.form-md-floating-label .form-control.focus:not([readonly])~label, .form-group.form-md-line-input.form-md-floating-label .form-control.form-control-static~label, .form-group.form-md-line-input.form-md-floating-label .form-control:focus:not([readonly])~label, .form-group.form-md-line-input.form-md-floating-label .form-control[readonly]~label {
+    color: #578EBE;
+    font-size: 15px;
+}
+.form-group.form-md-line-input.form-md-floating-label .form-control~label {
+    font-size: 14px;
+}
+.form-group.form-md-line-input.form-md-floating-label .form-control.edited~label, .form-group.form-md-line-input.form-md-floating-label .form-control.focus:not([readonly])~label, .form-group.form-md-line-input.form-md-floating-label .form-control.form-control-static~label, .form-group.form-md-line-input.form-md-floating-label .form-control:focus:not([readonly])~label, .form-group.form-md-line-input.form-md-floating-label .form-control[readonly]~label {
+    top: -10px;
+}
+.form-group.form-md-line-input .form-control~.form-control-focus:after, .form-group.form-md-line-input .form-control~label:after {
+    content: '';
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    visibility: hidden;
+    transition: .2s ease all;
+}
+.input-group-addon {
+    padding: 3px 12px;
+}
+.highlight-element{
+	font-size:16px;
+}
+
+.has-error .highlight-element{
+	color:red;
+}
+.has-error .form-control {
+    border-color: #ef3c0c;
+}
+.has-success .highlight-element{
+	color:green;
+}
+@media (max-width: 1366px) {
+.form-group{
+	/* padding-top:10px; */
+}
+
+.form-group.form-md-line-input:last-child {
+   /*  margin-bottom: 30px; */
+}
+
+.form-group.form-md-line-input:first-child {
+    /* margin-bottom: 30px; */
+}
+
+
+.form-group.form-md-line-input .form-control {
+    color: #C49F47;
+    font-size: 14px;
+}
+
+.form-group.form-md-line-input.form-md-floating-label .form-control.edited~label, .form-group.form-md-line-input.form-md-floating-label .form-control.focus:not([readonly])~label, .form-group.form-md-line-input.form-md-floating-label .form-control.form-control-static~label, .form-group.form-md-line-input.form-md-floating-label .form-control:focus:not([readonly])~label, .form-group.form-md-line-input.form-md-floating-label .form-control[readonly]~label {
+    color: #578EBE;
+    font-size: 14px;
+}
+
+.form-group.form-md-line-input.form-md-floating-label .form-control.edited~label, .form-group.form-md-line-input.form-md-floating-label .form-control.focus:not([readonly])~label, .form-group.form-md-line-input.form-md-floating-label .form-control.form-control-static~label, .form-group.form-md-line-input.form-md-floating-label .form-control:focus:not([readonly])~label, .form-group.form-md-line-input.form-md-floating-label .form-control[readonly]~label {
+    top: -10px;
+}
+
+.form-group.form-md-line-input .form-control.edited:not([readonly]):not(:focus)~.help-block, .form-group.form-md-line-input .form-control.edited:not([readonly]):not(:focus)~.help-block-error, .form-group.form-md-line-input .form-control.edited:not([readonly])~.help-block-error, .form-group.form-md-line-input .form-control:focus:not([readonly])~.help-block-error {
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
+.highlight-element {
+	font-size:12px;
+}
+}
+
+.check-group-container .md-checkbox{
+    margin-bottom:15px;
+}
+.fileinput-button{
+    background-color: #05dcef!important;
+    box-shadow: -7px 9px 20px 0px rgb(7, 167, 181)!important;
+    color: #fff;	
+}
+.fileinput-button input {
+    position: absolute;
+	width: 100%;
+    /* top: 0; */
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+/*     font-size: 200px;
+    direction: ltr; */
+    cursor: pointer;
+}

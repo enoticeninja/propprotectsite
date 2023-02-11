@@ -1,0 +1,120 @@
+#backdrop{
+		position:fixed;
+		display: flex;
+		flex-direction: column;
+		justify-content: center; /* align horizontal */
+		align-items: center; /* align vertical */
+		top: 0px;
+		width:100%;
+		height:100%;
+		background: rgba(0, 0, 0, 0.7);
+		z-index:99999999;
+	}
+	.progressbar-container {
+		position: relative;
+/* 		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%); */
+		width:80%;
+	}
+	.progressbar {
+		background-color: black;
+		border-radius: 13px;
+		padding: 3px;
+	}
+	.percentage_done{
+		animation: cssProgressActive 2s linear infinite;	
+		background-color: #0db3ef;
+		background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.125) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.125) 50%, rgba(255, 255, 255, 0.125) 75%, transparent 75%, transparent);
+		background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.125) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.125) 50%, rgba(255, 255, 255, 0.125) 75%, transparent 75%, transparent);
+		background-size: 35px 35px;	  
+		width: 1%;
+		height: 20px;
+		border-radius: 10px;
+	}
+	.hidden {
+		display: none!important;
+	}
+	.percentage_done_text{
+		position:relative;
+		top: -25px;
+		font-size:20px;
+		color:white;
+		margin:0 auto;
+	}
+	
+	@-webkit-keyframes cssProgressActive {
+	  0% {
+		background-position: 0 0;
+	  }
+	  100% {
+		background-position: 35px 35px;
+	  }
+	}
+	@-ms-keyframes cssProgressActive {
+	  0% {
+		background-position: 0 0;
+	  }
+	  100% {
+		background-position: 35px 35px;
+	  }
+	}
+	@keyframes cssProgressActive {
+	  0% {
+		background-position: 0 0;
+	  }
+	  100% {
+		background-position: 35px 35px;
+	  }
+	}
+
+	.lds-ring {
+		text-align:center;
+	  display: inline-block;
+	  position: relative;
+	  width: 64px;
+	  height: 64px;
+	  background: rgba(0, 0, 0, 0.5);
+	}
+	.lds-ring div {
+	  box-sizing: border-box;
+	  display: block;
+	  position: absolute;
+	  width: 51px;
+	  height: 51px;
+	  margin: 6px;
+	  border: 6px solid #0db3ef;
+	  border-radius: 50%;
+	  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	  border-color: #0db3ef transparent transparent transparent;
+	}
+	.lds-ring div:nth-child(1) {
+	  animation-delay: -0.45s;
+	}
+	.lds-ring div:nth-child(2) {
+	  animation-delay: -0.3s;
+	}
+	.lds-ring div:nth-child(3) {
+	  animation-delay: -0.15s;
+	}
+	@keyframes lds-ring {
+	  0% {
+		transform: rotate(0deg);
+	  }
+	  100% {
+		transform: rotate(360deg);
+	  }
+	}		
+	
+	.rings-holder{
+		text-align: center;
+		position: relative;
+		top: -70px;
+	}
+	.upload_sub_text{
+		font-size: 20px;
+		color: white;
+		text-align: center;
+		position: relative;
+		top: -80px;		
+	}

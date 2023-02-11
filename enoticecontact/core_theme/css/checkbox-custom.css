@@ -1,0 +1,41 @@
+.md-checkbox input[type=checkbox]:checked~label>.box {
+    opacity: 1;
+    -webkit-transform: scale(0) rotate(-180deg);
+    -moz-transform: scale(0) rotate(-180deg);
+    transform: scale(1) rotate(-180deg);
+}
+.md-checkbox label>.check {
+    top: -15px;
+    left: 12px;
+    width: 10px;
+    height: 30px;
+    border: 4px solid #36c6d3;
+    border-top: none;
+    border-left: none;	
+}
+
+
+
+.partial-check input[type=checkbox]:checked~label>.box {
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(-180deg);
+    -moz-transform: scale(1) rotate(-180deg);
+    transform: scale(1) rotate(-180deg);
+}
+.partial-check label>.check{
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+	background-color:#b71c1c;
+	border:0px;
+	border-radius: 50%;
+    opacity: 1;
+    z-index: 5;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition-delay: .3s;
+    -moz-transition-delay: .3s;
+    transition-delay: .3s;
+}

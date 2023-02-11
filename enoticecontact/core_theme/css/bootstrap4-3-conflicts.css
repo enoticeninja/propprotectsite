@@ -1,0 +1,73 @@
+.btn.red{
+	background-color: #f31625!important;
+    box-shadow: -5px 5px 7px 0px rgb(181, 6, 18)!important;
+	color:#ffffff!important;
+	margin-right:20px;
+}
+.btn.green{
+    background-color: #2bc53c!important;
+    box-shadow: -5px 5px 7px 0px rgb(42, 175, 48)!important;
+    color: #ffffff!important;
+    margin-right: 20px;
+}
+.btn.blue{
+	background-color: #05dcef!important;
+    box-shadow: -5px 5px 7px 0px rgb(7, 167, 181)!important;
+	color:#ffffff!important;
+	margin-right:20px;
+}
+.btn.yellow{
+	background-color: #f5c215!important;
+    box-shadow: -5px 5px 7px 0px rgb(228, 171, 6)!important;
+	color:#ffffff!important;
+	margin-right:20px;
+}
+.btn.orange{
+	background-color: #f5c215!important;
+    box-shadow: -5px 5px 7px 0px rgb(228, 171, 6)!important;
+	color:#ffffff!important;
+	margin-right:20px;
+}
+.btn.yellow-gold{
+	background-color: #e68c0b!important;
+    box-shadow: -5px 5px 7px 0px rgb(187, 141, 8)!important;
+	color:#ffffff!important;
+	margin-right:20px;
+}
+.font-yellow-gold {
+    color: #E87E04!important;
+}
+.font-green {
+    color: #32c5d2!important;
+}
+.card.d-flex .actions{
+    /* align-self: center;
+    position: fixed; */	
+}
+.hidden {
+    display: none;
+}
+.label{
+	font-size:12px!important;
+}
+.label.label-warning{
+	background-color: #ef9905!important;
+    box-shadow: -5px 5px 7px 0px rgb(183, 116, 8);	
+}
+.label.label-success{
+	background-color: #09cc0c!important;
+    box-shadow: -3px 4px 5px 0px rgb(15, 111, 16);
+}
+.label.label-info{
+	background-color: #05dcef!important;
+    box-shadow: -5px 5px 7px 0px rgb(7, 167, 181)!important;
+}
+.label.label-error{
+	background-color: #de2509!important;
+    box-shadow: -3px 4px 5px 0px rgb(165, 38, 7);
+}
+.mCSB_container {
+    overflow: visible;
+    width: auto;
+    height: auto;
+}

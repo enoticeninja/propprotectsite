@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>eNotice Ninja</title>
+        <link rel="stylesheet" href="font/stylesheet.css">
+        <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/custom.css">
+        <link rel="stylesheet" href="assets/responsive.css">
+        <link rel="icon" href="images/favicon.png">
+    </head>
+    <body>
+        <!-- navigation -->
+        <div class="navigation">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a href="index.html" class="navbar-brand desk"><img src="images/logo.png" class="logo" alt="logo"></a>
+                    <a href="index.html" class="navbar-brand tab"><img src="images/mob-logo.png" class="logo" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#about">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#feature">FEATURES</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#solution">SOLUTION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#plan">PLAN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://nanostuffs.com/enotice/login.php">SUBSCRIBE FOR NOTIFICATION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#about">ABOUT</a>
+                        <a href="#feature">FEATURES</a>
+                        <a href="#solution">SOLUTION</a>
+                        <a href="#plan">PLAN</a>
+                        <a href="http://nanostuffs.com/enotice/login.php">SUBSCRIBE FOR NOTIFICATION</a>
+                        <a href="#contact">CONTACT</a>
+                      </div>
+                    <span onclick="openNav()"><img src="images/mob-icon.png" class="menu-icon tab" alt="icon"></span>
+                </div>
+            </nav>
+        </div>
+       <div class="thank-you">
+           <div class="container">
+               <h2>Thank you for contacting us. We'll shortly connect with you.</h2>
+           </div>
+       </div>
+      
+        <!-- footer -->
+        <div id="contact" class="connect">
+            <div class="container">
+               <div class="row">
+                   <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <h6>CONNECT</h6>
+                        <h3>Have any questions?<br>Drop us a message.</h3>
+                          <!--<form action="lite_process.php" method="post" class="connect-form">-->
+                         <div class="alert alert-danger d-none" role="alert" id="form-error">
+
+						</div>
+						<div class="alert alert-success d-none" role="alert" id="form-success">
+
+						</div>
+						 <form id="contact-form" onSubmit="return false;" class="connect-form">
+						 <input type="hidden" id="action" name="action" class="form-control-cpg" required value="submit-contact-form" />
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padd-lft">
+                                <input type="text" placeholder="NAME" id="name" name="en-fname" class="form-control" required />
+								<div class="text-center" id="name_error" style="color:red;"></div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padd-lft">
+                                <input type="email" placeholder="EMAIL ID" type="email" id="email" name="en-email" class="form-control form-control-1" required/>
+								<div class="text-center" id="email_error" style="color:red;"></div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12 padd-lft">
+                                <textarea placeholder="MESSAGE" id="message" name="en-message" cols="" rows="6" class="form-control" required></textarea>
+							<div class="text-center" id="message_error" style="color:red;"></div>
+                            </div>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-12 padd-lft">
+								<div class="col-md-12 text-center">
+									<div class="g-recaptcha  text-center" data-sitekey="6LcMOtsZAAAAADCDwC9RTO6JJw3KlaEDvXSLI8aj" data-callback="recaptchaCallback"></div>
+									<div id="captcha_error" style="color:red;"></div>
+								</div>
+                            </div>
+							
+                            <div class="submit-btn">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-12 padd-lft">
+                                   <button class="btn-smt" onClick="register()">SEND MESSAGE</button>
+                                </div>
+                            </div>
+                        </form>
+                   </div>
+                   <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="address">
+                        <!-- <h6>ADDRESS</h6> -->
+                        <h3>Locate Us</h3>
+                        <div class="address-details">
+                            <div class="location">
+                                <a href="https://goo.gl/maps/a7T8kgKyuRmiRi4b9" target="_blank"><img src="images/location.svg" class="img-location" alt="location"></a>
+                            </div>
+                            <div class="location-details">
+                                <h6><strong>Registered Office:</strong></h6>
+                                <p>eNotice Ninja Softech Private Limited,<br> 1st Floor, ‘Sonigra Chambers’, Near Petrol Pump, Market Yard, Pune-411037. Maharashtra, India</p>
+                            </div>
+                        </div>
+                        <div class="address-details">
+                            <div class="location">
+                                <a href="https://goo.gl/maps/vAhWgNEhWqYNxRSD8" target="_blank"><img src="images/location.svg" class="img-location" alt="location"></a>
+                            </div>
+                            <div class="location-details">
+                                <h6><strong>Corporate Office:</strong></h6>
+                                <p>eNotice Ninja Softech Private Limited,<br> ‘Poonam Plaza’, Above Bank of Maharashtra, Market Yard Road, Pune-411037. Maharashtra, India</p>
+                            </div>
+                        </div>
+                        <div class="address-details">
+                            <div class="location">
+                                <img src="images/mail.svg" class="img-location-1" alt="location">
+                            </div>
+                            <div class="location-details-1">
+                                <a href="mailto:support@enoticeninja.com" target="_blank"><p>support@enoticeninja.com</p></a>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <p>Follow us on:</p>
+                            <p><a href="https://www.facebook.com/enoticeninja/" target="_blank"><img src="images/facebook.svg" class="social-icon" alt="facebook"></a>
+                            <a href="https://twitter.com/eNotice_Ninja" target="_blank"><img src="images/twitter.svg" class="social-icon" alt="twitter"></a>
+                            <a href="https://www.youtube.com/channel/UCnTwcHCqN8T9MLezr2a9lRQ?view_as=subscriber" target="_blank"><img src="images/youtube.svg" class="social-icon-1" alt="youtube"></a>
+                            <a href="https://www.instagram.com/enotice_ninja/" target="_blank"><img src="images/instagram.svg" class="social-icon-2" alt="instagram"></a>
+                            <a href="https://www.linkedin.com/company/73452189/admin/" target="_blank"><img src="images/linkedin.svg" class="social-icon-3" alt="linkedin"></a></p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div id="download" class="download">
+                                    <p>Download App</p>
+                                    <p><a href="https://apps.apple.com/us/app/itunes-connect/id376771144" target="_blank"><img src="images/apple-app.svg" class="app" alt="application"></a>
+                                       <a href="https://play.google.com/store/apps/details?id=com.nanostuffs.enoticeninja" target="_blank"><img src="images/google-play.svg" class="app" alt="application"></a></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div id="download" class="download">
+                                    <p>Scan QR Code & Download App</p>
+                                    <p><img src="images/eNoticeQR.svg" class="app" alt="application"></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                        
+                    </div>
+               </div>
+            </div>
+            <hr>
+            <div class="sub-footer d-none d-sm-block">
+                <div class="container">
+                    <p>Copyright &copy; 2020 e-Notice Ninja Private Limited - All rights reserved &nbsp;&vert;&nbsp; <a href="https://www.enoticeninja.com/terms.php">Terms and Conditions</a> &nbsp; <a href="https://www.enoticeninja.com/refund.php" >Refund Policy</a> &nbsp; <a href="https://www.enoticeninja.com/privacy.php">Privacy Policy
+                    </a></p>
+                    <!--<p>Designed by: <a href="https://www.optimist.co.in/" target="_blank">Optimist Brand Design LLP.</a></p>-->
+                </div>
+            </div>
+            <div class="sub-footer d-block d-sm-none">
+                <div class="container">
+                    <p>Copyright &copy; 2020 e-Notice Ninja Private Limited<br>All rights reserved &nbsp;&vert;&nbsp; <a href="https://www.enoticeninja.com/terms.php">Terms and Conditions</a><br><a href="https://www.enoticeninja.com/refund.php" >Refund Policy</a> &nbsp;&vert;&nbsp; <a href="https://www.enoticeninja.com/privacy.php">Privacy Policy
+                    </a></p>
+                  <!--  <p>Designed by: <a href="https://www.optimist.co.in/" target="_blank">Optimist Brand Design LLP.</a></p>-->
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+       
+        <script src="assets/bootstrap/jquery-3.2.1.slim.min.js"></script>
+        <script src="assets/bootstrap/jquery-3.5.1.min.js"></script>
+        <script src="assets/bootstrap/bootstrap.min.js"></script>
+    </body>
+</html>

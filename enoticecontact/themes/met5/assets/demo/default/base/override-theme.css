@@ -1,0 +1,12 @@
+.m-topbar .m-topbar__nav.m-nav > .m-nav__item.m-topbar__notifications.m-topbar__notifications--img.m-dropdown--arrow .m-dropdown__arrow {
+    color: #05dcef;
+}
+.m-topbar .m-topbar__nav.m-nav > .m-nav__item.m-topbar__notifications .dropdown__header{
+	background: #05dcef;
+}
+.m-topbar .m-topbar__nav.m-nav > .m-nav__item.m-topbar__quick-actions.m-topbar__quick-actions--img.m-dropdown--arrow .m-dropdown__arrow {
+    color: #05dcef;
+}
+.m-topbar .m-topbar__nav.m-nav > .m-nav__item.m-topbar__quick-action .dropdown__header{
+	background: #05dcef;
+}

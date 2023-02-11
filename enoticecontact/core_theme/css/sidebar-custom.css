@@ -1,0 +1,15 @@
+.page-sidebar .page-sidebar-menu>li.active.open>a, .page-sidebar .page-sidebar-menu>li.active>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active.open>a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active>a {
+    background: linear-gradient(60deg,#3dc0f3,#0a8abb);
+    border-top-color: transparent;
+    color: #fff;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgb(53, 41, 22);
+    margin:10px;
+    border-radius:4px;
+}
+.page-sidebar .page-sidebar-menu>li.active.open>a:hover, .page-sidebar .page-sidebar-menu>li.active>a:hover, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active.open>a:hover, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu>li.active>a:hover {
+    background: linear-gradient(60deg,#1f6067,#0bc5c5);
+    box-shadow: 0px 18px 20px 0 rgba(0,0,0,.14), 0px 14px 10px -5px rgb(6, 6, 6);
+}
+.page-sidebar-menu.page-sidebar-menu-hover-submenu li a>.arrow {
+    display: block;
+}
